@@ -1,0 +1,20 @@
+# Ignore Jupyter Notebook checkpoints and system files
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+.env/
+
+# Ignore large size files (stored on the cloud)
+*.pyc
+*.pyo
+*.psd
+*.jpg
+*.png
+
+# Ignore datasets and large files
+dev/
+docs/
+data/
+images/
+models/
