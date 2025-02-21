@@ -1,0 +1,13 @@
+pandas>=1.5.0  # Or specify a more precise version if needed
+numpy>=1.24.0  # Or specify a more precise version if needed
+matplotlib>=3.7.0 # Or specify a more precise version if needed
+opencv-python>=4.7.0 # Or specify a more precise version if needed
+setuptools>=67.0 # Or specify a more precise version if needed
+
+
+# Probably Need in requirements.txt (Check Your utils Modules):
+# security: This is a custom module within your utils package. You must check what libraries security.py imports and add them to requirements.txt. For example, if security.py uses cryptography, you'd add cryptography>=40.0 (or the appropriate version) to requirements.txt.
+# file_management: Another custom module. Same as above - check its imports. If it uses something like pathlib, ftplib, or any other third-party library, add it.
+# format: Custom module. Check its imports. If it relies on any external libraries, add them.
+# visualization: Custom module. Check for any external dependencies.
+# performance: Custom module. Check for any external dependencies.
