@@ -36,7 +36,7 @@ def sanitize_filename(input_str):
     # Checks for prohibited characters (then deletes them)
     # allowed_chars = r"^[a-zA-Z0-9_\-\.]+$"
     allowed_chars = r"^[a-zA-Z0-9_\-\./]+$" # Allow '/' in user input
-    if not re.fullmatch(allowed_chars, input_str):
+    if input_str and not re.fullmatch(allowed_chars, input_str):
         result = re.sub(allowed_chars, "", input_str)  # Sanitize (remove invalid chars)
         warnings.warn(f"This argument is unsafe. A sanitized version will be used instead. ('{input_str}' -> '{result}')", UserWarning)
 
