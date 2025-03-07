@@ -19,3 +19,4 @@ data/
 images/
 models/
 extra/
+*.code-workspace
